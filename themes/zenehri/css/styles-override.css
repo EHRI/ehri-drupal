@@ -1,0 +1,79 @@
+ /**
+ * Various CSS overrides to styles.css
+ * RS 17-01-2017
+*/
+
+.news h3 {
+   margin-top: 1em;}
+
+
+.blog ul {
+  list-style-type: none;
+  padding: 0 0 0 0;
+	
+}
+.blog li {
+  color: #84004c;
+  text-decoration: none;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1em;}
+
+.blog a {
+  text-decoration: none;
+  text-decoration-line: none;}
+
+.blog h2 a {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  background-image: url(../images/blogposts.svg);
+  background-repeat: no-repeat;
+  background-size: 60vw auto;
+  background-position: left top;
+  width: 60vw;
+  height: 10vw;
+}
+
+@media all and (min-width: 480px) and (max-width: 959px) {
+  .blog h2 a {
+    background-size: 20vw auto;
+    height: 5vw;
+    width: 20vw; }
+}
+
+
+@media all and (min-width: 960px) {
+  .blog h2 a {
+    background-size: 20vw auto;
+    height: 5vw;
+    width: 20vw;
+    background-position: 0 2vw; }
+}
+
+@media all and (min-width: 1400px) {
+  .blog h2 a {
+    background-size: 280px auto;
+    background-position: 0 28px;
+    height: 70px;
+    width: 280px; }
+}
+
+/**
+* Display of ars electronica block in footer
+* RS 13 June 2018
+*/
+.funding {
+  float:left;}
+
+.ars a {
+  white-space: nowrap;
+  overflow: hidden;
+  height: 6vw;
+  width: 16vw;
+  margin-top: 2vw;
+  margin-left: 20vw;
+  display:flex;
+  align-items: center; }
+

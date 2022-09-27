@@ -1,0 +1,355 @@
+
+@media all and (min-width: 1200px) {
+	body {
+		
+		font-size:1em;
+		line-height:1.5em;
+	}
+	
+	#header {
+min-height:125px;
+	}
+	
+	 #header-inner {
+
+ }
+	
+	.row {
+		width:1200px;
+		overflow:visible;
+	}
+	 #logo a {
+	width: 200px;
+	height: 121px;
+	background-image: url(../../images/logo1200.png);	 
+	
+ }
+ 
+  .front #logo a {
+	background-image: url(../../images/logo1200front.png); 
+	width:220px;
+	 height:175px;
+ }
+ 
+ .front .view-homepage-intro {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    margin-left: 100px;
+    margin-right: 190px;
+	padding-top:4em;
+	padding-bottom:2em;
+ }
+ 
+ .front .view-homepage-intro p,.front .view-homepage-intro .views-row {
+	 display:inline;
+ }
+ .readmore {
+    line-height: 1.8em;
+	height:1.8em;
+ }
+ .readmore a {
+	text-indent:-5000px;
+	display:inline-block;
+	background-image:url(../../images/readmore1200.png);
+	background-repeat:no-repeat;
+	background-position:left 10px;
+	width:32px;
+	height:1.8em;
+	margin-left:0.5em; 
+
+ }
+ 
+/* taxonomy page */ 
+ .page-taxonomy #page-title {
+height:69px;
+padding-left:96px;
+}
+.page-taxonomy #page-title:first-letter {
+		padding-right: 0.5em;
+	background-image: url(../../images/acc1200.png);
+	background-position: right -8px;
+}
+
+.page-node .field-unit {
+font-size:1em;
+height:35px;
+padding-top:4px;
+padding-left:40px;
+padding-bottom:0;	
+}
+.page-node .field-unit a {
+	display:block;
+	color:#fff;
+	text-decoration:none;
+}
+.page-node .field-unit a:first-letter {
+color: #00b6ed;
+	padding-right: 0.5em;	
+}
+
+
+.term-listing-heading {
+	color:#36104f;
+	margin-left:140px;
+	margin-right:200px;
+}
+.chapter-number {
+	width: 130px;
+}
+.view-chapter-list .chaptertitle {
+	margin-left:140px;
+	margin-right:140px;
+}
+.page-taxonomy .node-teaser .field-title  {
+	margin-left:140px;
+}
+
+/* chapter page */
+.page-node .field-chapter-number {
+	float:left;
+	width:130px;
+	text-align:right;
+	font-size:2em;
+	line-height:1.5em;
+	color:#009fe4;
+	font-weight:700;
+	padding-right:10px;
+	padding-top:0.5em;
+
+}
+
+.page-node .field-title h1 {
+	font-size:2em;
+	line-height:1.3em;
+	padding-top:0.5em;
+	padding-right:30px;
+	color:#36104f;
+	margin:0;
+}
+
+.page-node .field-lead {
+	font-size:1.2em;
+	line-height: 1.8em;
+}
+ .page-node .field-lead, .page-node .field-body {
+	margin-left:140px;
+	margin-right:300px;
+}
+.page-node .field-title {
+	margin-left:140px;
+	margin-right:70px;
+}
+.region-content-bottom {
+	margin-left:140px;
+	margin-right:75px;
+}
+
+.page-node .field-body h2 {
+	margin:0;
+color:#91195e;
+font-size:1.2em;	
+}
+.page-node .source-in-chapter .field-title h2 {
+	color: #fff;
+	margin-top:6px;
+}
+
+/* source page */
+html.js .source-in-chapter .collapsible .fieldset-legend {
+	width: 1158px;
+	height: 110px;
+}
+.source-in-chapter .fieldset-legend .summary {
+	display: none;
+}
+html.js .source-in-chapter fieldset.collapsible {
+	width: 1059px;
+	left: -99px;
+	padding-left: 99px;
+	background-image: url(../../images/sourceicon1200.png);
+	font-size: 0.8em;
+	line-height: 1.5em;
+	margin-bottom:1em;
+}
+html.js .source-in-chapter fieldset.collapsible.collapsed {
+	height: 110px;
+}
+.collapsible .source-plaatje {
+	overflow: hidden;
+	height: 110px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 370px;
+	z-index: 1;
+	display: block;
+}
+.collapsible .source-links {
+	float: left;
+	width: 638px;
+	padding-left: 50px;
+}
+.collapsible .source-rechts {
+	float: left;
+	width: 370px;
+	height: 210px;
+	overflow: hidden;
+	background-color: #10a7e7;
+	padding-left:1px;
+}
+.collapsible .source-plaatje-onder {
+	height: 320px;
+	width: 370px;
+	position: relative;
+	top: -110px;
+	overflow: hidden;
+}
+.collapsible .fieldset-wrapper .sourceinfo {
+	height: 210px;
+	padding-top: 110px;
+	background-color: #9c3267;
+	
+}
+.source-in-chapter .field-body {
+	margin-right: 510px;
+}
+
+.node-type-source .chaptertitle .chapterlink {
+	width:760px;
+	height:35px;
+}
+.node-type-source .node-source .group-left {
+    padding-left: 40px;
+    width: 775px;
+}
+
+
+
+  /**
+   * The layout when there is only one sidebar, the left one.
+   */
+
+  /* Span 4 columns, starting in 2nd column from left. */
+  .sidebar-first #content {
+    float: left;
+    width: 80%;
+    margin-left: 20%;
+    margin-right: -100%;
+  }
+
+  /* Span 1 column, starting in 1st column from left. */
+  .sidebar-first .region-sidebar-first {
+    float: left;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: -20%;
+  }
+
+  /**
+   * The layout when there is only one sidebar, the right one.
+   */
+
+  /* Span 4 columns, starting in 1st column from left. */
+  .sidebar-second #content {
+    float: left;
+    width: 80%;
+    margin-left: 0%;
+    margin-right: -80%;
+  }
+
+  /* Span 1 column, starting in 5th column from left. */
+  .sidebar-second .region-sidebar-second {
+    float: left;
+    width: 20%;
+    margin-left: 80%;
+    margin-right: -100%;
+  }
+
+  /**
+   * The layout when there are two sidebars.
+   */
+
+  /* Span 3 columns, starting in 2nd column from left. */
+  .two-sidebars #content {
+    float: left;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: -80%;
+  }
+
+  /* Span 1 column, starting in 1st column from left. */
+  .two-sidebars .region-sidebar-first {
+    float: left;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: -20%;
+  }
+
+  /* Span 1 column, starting in 5th column from left. */
+  .two-sidebars .region-sidebar-second {
+    float: left;
+    width: 20%;
+    margin-left: 80%;
+    margin-right: -100%;
+  }
+  
+  .ehrifooter {
+	height:38px;
+}
+.ehrifooter .top a {
+	width:38px;
+	height:38px;
+	background-image:url(../../images/top1200.png);
+}
+
+.ehrifooter .name a {
+	height:38px;
+	width:567px;
+	margin-left:625px;
+	text-indent:-5000px;
+	background-image:url(../../images/footer1200.png);
+	
+}
+
+.view-units .views-row {
+	width:892px;
+	margin-left:35px;
+	padding-left:70px;
+	background-image:url(../../images/bg-row.png);
+	background-repeat:repeat-y;
+}
+  .view-units .group-left {
+	  width:557px;
+	  padding-right:10px;
+  }
+   .view-units .group-right {
+	  width:325px;
+	  height:235px;
+	overflow:hidden;  
+  } 
+  .view-units h2 {
+	  font-size:1.1em;
+	  line-height:1.3em;
+	  margin-top:0.5em;
+text-indent:-50px;
+  }
+  .view-units h2:first-letter {
+	  color:#fff;
+	  padding-right:35px;
+  }
+  .view-units p {
+	  font-size:0.9em;
+	  line-height:1.4em;
+  }
+  .node-source .label-inline {
+	padding: 0 1em 0 0;
+	float: left;
+	display: block;
+	width: 140px;
+}
+.page-node #block-views-index-block .field-chapter-number {
+
+    width: 35px;
+}
+
+}

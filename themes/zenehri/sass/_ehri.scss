@@ -1,0 +1,268 @@
+
+body {
+ background-color:$grijs;
+}
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color:$rood;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom:0;
+}
+
+h1#page-title {
+    font-weight:300;
+    margin-bottom:1vw;
+    font-size:2.4rem;
+    margin-bottom:1rem;
+}
+
+header {
+    background-color:#fff;
+}
+
+
+
+#content {
+    background-color:$rood;
+    background-image:url(../images/rood.png);
+}
+
+#content-inner {
+    background-color:$lichtgrijs;
+    overflow:hidden;
+    padding:2vw;
+}
+
+#content h2 {
+font-size:1.6rem;
+font-weight:300;
+margin-bottom:0;
+margin-top:1rem;
+}
+
+#content p {
+    margin-top:0;
+}
+#content ul {
+    margin-left:0;
+    padding:0;
+    list-style-type:none;
+    }
+
+#content ul li {
+    padding-left: 1.6rem;
+   background-image:url(../images/bullet.svg);
+   background-position:0 0.6rem;
+   background-repeat:no-repeat;
+   background-size:1rem auto;
+}
+
+#main-inner {
+    overflow:hidden;
+}
+
+.sidebar {
+    background-color:#fff;
+ 
+}
+#menubutton {
+ display:block;
+ position:absolute; 
+ left:0;
+ top:0;
+ @include hide-text; 
+ background-image: url(../images/menubutton.svg);
+    background-repeat: no-repeat;
+    background-size: 10vw;
+    background-position: left 10vw top 5vw;
+    width: 30vw;
+    height: 50vw;
+}
+h1#logo {
+    margin: 0;
+}
+h1#logo a {
+    display: block;
+    @include hide-text; 
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    width: 70vw;
+    height: 50vw;
+    background-color: #fff;
+    margin-left:30vw;
+}
+
+#block-search-form {
+    background-color: #fff;
+    width: 90vw;
+    margin-left:10vw;
+    padding: 7vw 0 7vw 0;
+}
+#block-search-form input.form-text {
+    background-color: #ecedee;
+    border: 1px solid #84004c;
+    height: 2rem;
+    width: 60%;
+}
+#block-search-form input.form-submit {
+    background-color: transparent;
+    border: medium none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.view-header-image {
+    display:none;
+}
+
+#navigation {
+    position:absolute;
+    top:0;
+    left:-70vw;
+    background-color:$grijs;
+    width:70vw;
+    transition: left ease-in-out 0.5s;
+}
+
+.menu #navigation {
+    left:30vw;
+}
+
+.submenu ul {
+    font-weight:bold;
+    margin-left:0;
+    padding-left:0;
+}
+.submenu ul>li>ul {
+    font-weight:normal;
+}
+
+.submenu ul li {
+    background-color: transparent;
+    background-image: none;
+    border-left: medium none;
+    display: inline-block;
+    float: none;
+    height: 18px;
+    list-style-image: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 4px 0 0 6px;
+    width: 134px;
+}
+.submenu ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+.view-homepage-teasers .views-row {
+    margin:2rem 1rem 1rem 1rem;
+}
+
+.view-homepage-teasers h2 {
+    margin:0.5rem 0 0 0;
+    padding:0 0 1rem 0;
+}
+.view-homepage-teasers h2 a {
+    color: #84004c;
+    text-decoration: none;
+}
+
+.view-homepage-teasers img {
+    border: 1px solid $grijs;
+}
+
+.sidebar .block {
+    padding:1rem;
+}
+
+.news h2 a {
+    @include hide-text; 
+    background-image: url(../images/latestnews.svg);
+    background-repeat: no-repeat;
+    background-size: 60vw auto;
+    background-position: left top;
+    width: 60vw;
+    height: 10vw;
+}
+   
+   .news h3 a {
+    color: #84004c;
+    text-decoration: none;
+} 
+.news .more-link a {
+    font-weight: bold;
+    text-decoration: none;
+}
+.field-name-field-photo {
+    
+}
+.field-name-field-photo img {
+    width:100%;
+    height:auto;
+}
+.field-name-field-datum {font-weight:700;
+}
+
+.funding a {
+  @include hide-text; 
+    background-image: url(../images/eulogo.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    height:6vw;
+    width:16vw;
+    margin-top:2vw;
+}
+.breadcrumb a {
+    font-weight:700;
+    font-size:0.75rem;
+text-decoration:none;
+}
+.view-people-in-ehri .views-row {
+    position:relative;
+}
+.field-name-node-link {
+    clear:both;
+    margin-bottom:1rem;
+}
+ .field-name-node-link a {
+     text-decoration:none;
+     display:block;
+     border-top:1px solid $rood;
+     margin-top:1rem;
+     padding-right:0.5rem;
+     font-weight:700;
+     font-size:0.9rem;
+     text-align:right;
+    opacity: 0.7;
+ }
+ 
+ .wptable .header {
+    background-color: #fff;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.wptable .label {
+    float: left;
+    padding-left: 5px;
+    width: 20%;
+}
+.wptable .wpcontent {
+    float: left;
+    width: 80%;
+}
+.wptable .wprow {
+    clear: both;
+    overflow: visible;
+    padding-top: 0.4rem;
+}

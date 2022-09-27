@@ -1,0 +1,648 @@
+/**
+ * @file
+ * Positioning for a responsive layout.
+ *
+ * Define CSS classes to create a fluid grid layout with optional sidebars
+ * depending on whether blocks are placed in the left or right sidebars.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+
+/**
+ * Center the page.
+ *
+ * For screen sizes larger than 1200px, prevent excessively long lines of text
+ * by setting a max-width.
+ */
+body {
+	background-color: #bebebe;
+	line-height: 1.5em;
+	font-size: 0.9em;
+}
+p:empty {
+	display: none;
+	}
+a {color:#1A0DAB;
+}
+#page {
+	padding-bottom: 2em;
+}
+.front #page {
+	padding-bottom: 0em;
+}
+.row {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 960px;
+}
+#header {
+	min-height: 100px;
+}
+#header #site-name {
+	font-size: 2em;
+	line-height: 1.5em;
+	margin-top: 1em;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 0;
+}
+#header ul.menu {
+	margin: 0;
+	padding: 0;
+}
+#header .menu li {
+	display: inline;
+	padding-right: 2em;
+	font-family: "ff-tisa-sans-web-pro";
+}
+#header .menu li a {
+	text-decoration: none;
+	color: #91195e;
+	font-weight: bold;
+}
+#site-name a {
+	color: #fff;
+	font-variant: small-caps;
+	letter-spacing: 0.1em;
+}
+#logo a {
+	display: block;
+	width: 160px;
+	height: 97px;
+	text-indent: -5000px;
+	background-repeat: no-repeat;
+	background-image: url(../../images/logo960.png);
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.front #header {
+	background-color: #fff;
+}
+.front #content {
+	background-color: #bebebe;
+}
+.front #site-name a {
+	color: #350e4f;
+}
+.front #logo a {
+	background-image: url(../../images/logo960front.png);
+	width: 170px;
+	height: 135px;
+}
+.front .view-homepage-intro {
+	color: #36104F;
+	font-size: 1.2em;
+	line-height: 1.8em;
+	margin-left: 80px;
+	margin-right: 160px;
+	padding-top: 3em;
+	padding-bottom: 2em;
+}
+.front .view-homepage-intro p, .front .view-homepage-intro .views-row {
+	display: inline;
+}
+.front #footer .row {
+	width: 100%;
+}
+.readmore {
+	line-height: 1.8em;
+	height: 1.8em;
+}
+.readmore a {
+	text-indent: -5000px;
+	display: inline-block;
+	background-image: url(../../images/readmore960.png);
+	background-repeat: no-repeat;
+	background-position: left 10px;
+	width: 26px;
+	height: 1.8em;
+}
+#content {
+	background-color: #fff;
+}
+.page-taxonomy #page-title {
+	background-color: #350f4f;
+	color: #fff;
+	font-family: "ff-tisa-sans-web-pro";
+	font-size: 2em;
+	letter-spacing: 0.05em;
+	height: 54px;
+	padding-top: 8px;
+	padding-left: 80px;
+	padding-bottom: 0;
+}
+
+.page-taxonomy-term-2 #page-title {
+font-size:1.7em;	
+}
+
+.page-taxonomy #page-title:first-letter {
+	color: #00b6ed;
+	padding-right: 0.5em;
+	background-image: url(../../images/acc960.png);
+	background-repeat: no-repeat;
+	background-position: right -5px;
+}
+.view-indexlink a {
+	position:absolute;
+	right:0px;
+	top:0px;
+	color:#fff;
+	text-decoration:none;
+		font-family: "ff-tisa-sans-web-pro";
+		padding-right:1em;
+		padding-top: 4px;
+}
+
+.page-node .field-unit {
+	background-color: #350f4f;
+	color: #fff;
+	font-family: "ff-tisa-sans-web-pro";
+	font-size: 1em;
+	letter-spacing: 0.05em;
+	height: 28px;
+	padding-top: 4px;
+	padding-left: 40px;
+	padding-bottom: 0;
+}
+.page-node .field-unit a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+.page-node .field-unit a:first-letter {
+	color: #00b6ed;
+	padding-right: 0.5em;
+}
+.term-listing-heading {
+	color: #36104f;
+	margin-left: 125px;
+	margin-right: 80px;
+	margin-top: 1em;
+	font-size: 1.2em;
+	line-height: 1.8em;
+}
+.page-views #page-title {
+	display: none;
+}
+.view-chapter-list {
+	font-size: 1.3em;
+	line-height: 1.4em;
+	font-weight: 700;
+	padding-bottom:1em;
+}
+.view-chapter-list a {
+	color: #85004c;
+	text-decoration: none;
+}
+.chapter-number {
+	width: 110px;
+	text-align: right;
+	color: #009fe4;
+	display: block;
+	float: left;
+}
+.view-chapter-list .chaptertitle {
+	margin-left: 120px;
+	margin-right:75px;
+	margin-bottom:0.5em;
+}
+.chapter-number:after {
+	content: ") ";
+}
+.view-sources .views-row {
+	margin-bottom:0.5em;
+}
+.page-taxonomy .node-teaser .field-title {
+	margin-left: 125px;
+}
+.field-title h2 {
+	margin: 0;
+}
+.field-title h2 a {
+	text-decoration: none;
+	color: #85004c;
+}
+/* chapter page */
+.page-node .field-chapter-number {
+	float: left;
+	width: 110px;
+	text-align: right;
+	font-size: 2em;
+	line-height: 1.5em;
+	color: #009fe4;
+	font-weight: 700;
+	padding-right: 10px;
+	padding-top: 0.5em;
+}
+.page-node .field-chapter-number:after {
+	content: ") ";
+}
+.page-node .field-title h1 {
+	font-size: 2em;
+	line-height: 1.2em;
+	padding-top: 0.5em;
+	padding-bottom:0.5em;
+	color: #36104f;
+	margin: 0;
+}
+.page-node .field-lead {
+	font-size: 1.2em;
+	line-height: 1.8em;
+}
+.page-node .field-lead, .page-node .field-body {
+	margin-left: 120px;
+	margin-right: 200px;
+}
+.page-node .field-title {
+	margin-left: 120px;
+	margin-right: 50px;
+}
+
+
+.region-content-bottom {
+	margin-left: 120px;
+	margin-right: 50px;
+	padding-bottom: 2em;
+}
+.page-node .field-body h2 {
+	margin: 0;
+	color: #91195e;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+/* Apply the shared properties of grid items in a single, efficient ruleset. 
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/path/to/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* Containers for grid items and flow items.
+#header,
+#main,
+#footer {
+  *position: relative;
+  *zoom: 1;
+}
+#header:before,
+#header:after,
+#main:before,
+#main:after,
+#footer:before,
+#footer:after {
+  content: "";
+  display: table;
+}
+#header:after,
+#main:after,
+#footer:after {
+  clear: both;
+}
+
+
+*/
+
+.ehrifooter {
+	height: 29px;
+	background-color: #009fe4;
+}
+.ehrifooter .top a {
+	display: block;
+	float: left;
+	width: 29px;
+	height: 29px;
+	text-indent: -5000px;
+	background-image: url(../../images/top960.png);
+	background-repeat: no-repeat;
+	text-align: left;
+	text-indent: -5000px;
+}
+.ehrifooter .name a {
+	display: block;
+	height: 29px;
+	width: 427px;
+	margin-left: 530px;
+	text-indent: -5000px;
+	background-image: url(../../images/footer960.png);
+	background-repeat: no-repeat;
+}
+.view-units .views-row {
+	width: 712px;
+	background-color: #fff;
+	overflow: hidden;
+	margin-bottom: 2em;
+	margin-left: 28px;
+	padding-left: 60px;
+	background-image: url(../../images/bg-row.png);
+	background-position: -15px 0px;
+	background-repeat: repeat-y;
+}
+.view-units .group-left {
+	width: 438px;
+	padding-bottom: 0.5em;
+	padding-right: 10px;
+}
+.view-units .group-right {
+	width: 264px;
+	height: 192px;
+	overflow: hidden;
+}
+.view-units h2 {
+	font-size: 1.1em;
+	line-height: 1.3em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	text-indent: -50px;
+}
+.view-units h2:first-letter {
+	color: #fff;
+	padding-right: 35px;
+}
+.view-units p {
+	font-size: 0.9em;
+	line-height: 1.4em;
+	margin-bottom:0;
+}
+/* source page */
+html.js .source-in-chapter .collapsible .fieldset-legend {
+	background-image: none;
+	padding: 0;
+	margin: 0;
+	width: 918px;
+	height: 90px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.source-in-chapter .fieldset-legend .summary {
+	display: none;
+}
+html.js .source-in-chapter fieldset.collapsible {
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 1em;
+	padding: 0;
+	width: 840px;
+	height: auto;
+	position: relative;
+	left: -78px;
+	padding-left: 78px;
+	background-image: url(../../images/sourceicon960.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	color: #fff;
+	font-size: 0.8em;
+	line-height: 1.5em;
+	font-family: "ff-tisa-sans-web-pro";
+	border: none;
+}
+html.js .source-in-chapter fieldset.collapsible .veld_in_source {
+	clear:both;
+}
+html.js .source-in-chapter fieldset.collapsible.collapsed {
+	height: 90px;
+}
+.collapsible .source-plaatje {
+	overflow: hidden;
+	height: 90px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 290px;
+	z-index: 1;
+	display: block;
+}
+.collapsible .source-links {
+	float: left;
+	width: 510px;
+	padding-left: 40px;
+}
+.collapsible .source-rechts {
+	float: left;
+	width: 289px;
+	height: 210px;
+	overflow: hidden;
+	background-color: #10a7e7;
+}
+.collapsible .source-plaatje-onder {
+	height: 300px;
+	width: 290px;
+	position: relative;
+	top: -90px;
+	overflow: hidden;
+}
+.collapsible .fieldset-wrapper .sourceinfo {
+	height: 210px;
+	background-color: #9c3267;
+	padding-top:90px;
+}
+.source-in-chapter .field-title h2 {
+	color: #fff;
+	font-size: 1.4em;
+	font-weight: normal;
+	margin-top: 6px;
+	margin-right: 10px;
+	margin-left: 0;
+	padding-bottom: 10px;
+	line-height: 1em;
+	font-family: "ff-tisa-sans-web-pro";
+}
+.source-in-chapter .field-body {
+	color: #fff;
+}
+.source-in-chapter a.fieldset-title {
+	color: #fff;
+	text-decoration: none;
+}
+.source-in-chapter a.fieldset-title:focus {
+	outline: none;
+}
+.collapsible .sourcefield {
+	height: auto;
+	overflow: visible;
+}
+
+.node-source .group-left {
+	width: 520px;
+	padding: 15px;
+	float: left;
+}
+
+.node-source .group-right {
+	width: 290px;
+	float: left;
+	line-height: 0;
+}
+/* source page */
+
+.page-node.node-type-source .node-source .field-title, .page-node.node-type-source .node-source .field-lead, .page-node.node-type-source .node-source .field-body {
+    color: #000;
+}
+.page-node.node-type-source .node-source .group-left a {
+	color: #1A0DAB;
+	text-decoration: underline;
+}
+
+.node-type-source h2 {
+	line-height:1.3em;
+	margin-bottom:1em;
+}
+.node-type-source .field-label,.node-type-source h3.field-label, .node-type-source .label-inline {
+	color:#000;
+	padding-top:0.5em;
+	font-weight:bold;
+	margin-bottom:0;
+	font-size:1em;
+}
+.node-type-source .node-source {
+	background-color: #fff;
+	border-bottom: 1px solid #00a1e5;
+}
+
+.node-type-source .node-source .group-left {
+	width: 535px;
+	padding-left:40px;
+}
+
+.node-type-source .node-source .group-right {
+	width: 370px;
+}
+.node-type-source .field-unit {
+}
+.node-type-source .chaptertitle .chapterlink {
+	padding-left: 40px;
+	height: 28px;
+	padding-top: 0px;
+	margin-bottom:20px;
+	position: relative;
+	left: -40px;
+	top: -5px;
+	width: 520px;
+}
+.page-node.node-type-source .node-source .group-left .chaptertitle a {
+	color: #1A0DAB;
+	font-family: "ff-tisa-sans-web-pro";
+	padding-left: 30px;
+	background-image: url(../../images/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 0px 7px;
+}
+.node-source a {
+	color: #1A0DAB;
+	text-decoration: none;
+}
+.node-source .field-body {
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+.node-source .field-long-description {
+	margin-bottom: 0.5em;
+}
+.page-node .node-source .field-title, .page-node .node-source .field-lead, .page-node .node-source .field-body {
+	margin-left: 0px;
+	margin-right: 0;
+	color: #fff;
+	clear: left;
+}
+.page-node .field-body .node-source h2 {
+	color: #fff;
+	font-size: 1.4em;
+	font-weight: normal;
+	float: left;
+	margin-top: 0;
+	margin-right: 10px;
+	margin-left: 0;
+	margin-bottom: 10px;
+	line-height: 1em;
+	font-family: "ff-tisa-sans-web-pro";
+}
+.page-node .field-body .node-source .field-location {
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-right: 10px;
+	line-height: 1em;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+.veld_in_source a {
+	color: #fff042;
+	text-decoration: none;
+}
+.source-in-chapter .field-body {
+	margin-right: 310px;
+}
+.veld_in_source .label-inline {
+	padding: 0 1em 0 0;
+	float: left;
+	display: block;
+	width: 80px;
+}
+
+/* source pages */
+
+/* additional classes */
+.nextchapter {
+	text-align:right;
+	margin-top:1em;
+}
+.nextchapter .label-inline {
+	font-weight:bold;
+}
+
+/* index pages */
+#block-views-index-block-1 {
+	margin-left: 120px;
+    margin-right: 200px;
+	padding-bottom:1em;
+}
+#block-views-index-block-1 h3 a {
+color: #85004C;
+    text-decoration: none;
+	}
+	#block-views-index-block h3 a:hover {
+	text-decoration:underline;
+	}
+#block-views-index-block-1 h2 {
+    color: #36104F;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin: 0;
+    padding-top: 0.5em;
+}
+#block-views-index-block-1 h3 {
+    color: #36104F;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin: 0;
+    padding-top: 0.5em;
+}
+.page-node #block-views-index-bloc-1k .field-title {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.page-node #block-views-index-block-1 .field-chapter-number {
+    color: #009FE4;
+    float: left;
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 1.5em;
+    padding-right: 10px;
+    padding-top: 0.5em;
+    text-align: left;
+    width: 25px;
+}
